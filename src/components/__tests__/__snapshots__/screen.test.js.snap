@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Screen should render correctly 1`] = `<styled.div />`;
+
+exports[`Screen should render correctly with a value 1`] = `
+<styled.div>
+  Foo
+</styled.div>
+`;

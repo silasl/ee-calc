@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render correctly 1`] = `
+<styled.button
+  onClick={[Function]}
+>
+  A
+</styled.button>
+`;
+
+exports[`Button should render correctly with a className 1`] = `
+<styled.button
+  className="foo"
+  onClick={[Function]}
+>
+  A
+</styled.button>
+`;
+
+exports[`Button should render correctly with a label 1`] = `
+<styled.button
+  onClick={[Function]}
+>
+  B
+</styled.button>
+`;

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Brand should render correctly 1`] = `
+<styled.div>
+  <styled.a
+    href="https://www.equalexperts.com/"
+    target="_blank"
+    title="EE homepage"
+  >
+    <styled.img
+      alt="[=] Equal Experts"
+      src="logo.svg"
+    />
+  </styled.a>
+</styled.div>
+`;
+
+exports[`Brand should render correctly with a child 1`] = `
+<styled.div>
+  <styled.a
+    href="https://www.equalexperts.com/"
+    target="_blank"
+    title="EE homepage"
+  >
+    <styled.img
+      alt="[=] Equal Experts"
+      src="logo.svg"
+    />
+  </styled.a>
+  Foo
+</styled.div>
+`;
