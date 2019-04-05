@@ -11,6 +11,16 @@ exports[`App should render correctly 1`] = `
       handleClick={[Function]}
       value="C"
     />
+    <Button
+      handleClick={[Function]}
+      id="memRecall"
+      value="MR"
+    />
+    <Button
+      handleClick={[Function]}
+      id="memPlus"
+      value="M+"
+    />
   </Brand>
   <styled.div>
     <styled.div>

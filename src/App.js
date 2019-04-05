@@ -38,12 +38,18 @@ const Operators = styled.div`
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {input: ''};
+    this.state = {
+      input: '',
+      memory: 0,
+    };
   }
 
   clearInputValue = () => this.setState({ input: '' });
   setInputValue = (val) => this.setState({ input: `${this.state.input}${val}` });
   calculate = () => this.setState({ input: MathEval(this.state.input).toString() });
+  memoryPlus = () => this.setState({ memory: this.state.memory ?
+    this.state.memory + this.state.memory : parseInt(this.state.input) })
+  memoryRecall = () => this.setState({ input: this.state.memory.toString() });
 
   render() {
     return (
@@ -52,6 +58,8 @@ class App extends Component {
         <Screen value={this.state.input} />
         <Brand>
           <Button value="C" handleClick={this.clearInputValue} />
+          <Button id="memRecall" value="MR" handleClick={this.memoryRecall} />
+          <Button id="memPlus" value="M+" handleClick={this.memoryPlus} />
         </Brand>
         <Pad>
           <Numbers>
